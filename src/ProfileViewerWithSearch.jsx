@@ -39,6 +39,17 @@ function ProfileViewerWithSearch() {
             className="profile-img"
           />
           <p className="mb-2 font-bold">{profile.data.name}</p>
+          <p className="mb-2 font-bold">{profile.data.bio}</p>
+          <div className="user-info">
+            <div className="user-info-card">
+              <h1>{profile.data.followers}</h1>
+              <h5>Follower</h5>
+            </div>
+            <div className="user-info-card">
+              <h1>{profile.data.following}</h1>
+              <h5>Following</h5>
+            </div>
+          </div>
         </div>
       ) : (
         <p className="text-red-500">User not found</p>

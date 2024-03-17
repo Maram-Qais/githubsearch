@@ -1,14 +1,10 @@
 // ProfileSearchForm.js
 import { useState } from "react";
-import "./styles.css"
-import '@fortawesome/fontawesome-free/css/all.css';
-
-
-
+import "./styles.css";
+import "@fortawesome/fontawesome-free/css/all.css";
 
 function ProfileSearchForm({ search }) {
   const [term, setTerm] = useState("");
-
 
   function handleChange(evt) {
     setTerm(evt.target.value);
@@ -24,16 +20,15 @@ function ProfileSearchForm({ search }) {
     <form onSubmit={handleSubmit} className="mb-4">
       <div className="input-wrapper">
         <input
+          type="text"
           value={term}
           onChange={handleChange}
           placeholder="Search GitHub user"
-          className="w-full"
           required
         />
-      <button type="submit">
-  <i className="fas fa-search"></i>
-</button>
-
+        <button type="submit">
+          <i className="fa fa-search"></i>
+        </button>
       </div>
     </form>
   );
