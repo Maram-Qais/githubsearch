@@ -1,6 +1,7 @@
 // ProfileSearchForm.js
 import { useState } from "react";
 import "./styles.css"
+import '@fortawesome/fontawesome-free/css/all.css';
 
 
 
